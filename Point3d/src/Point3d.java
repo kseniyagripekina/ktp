@@ -1,5 +1,5 @@
 public class Point3d {
-    private double x, y, z;
+    public double x, y, z;
 
     public Point3d(double x1, double y1, double z1) {
         x = x1;
@@ -7,21 +7,21 @@ public class Point3d {
         z = z1;
     }
 
-    public Point3d() {
-        this(0., 0., 0.);
-    }
-
-    public void setX(double x1) {
-        x = x1;
-    }
-
-    public void setY(double y1) {
-        y = y1;
-    }
-
-    public void setZ(double z1) {
-        z = z1;
-    }
+//    public Point3d() {
+//        this(0., 0., 0.);
+//    }
+//
+//    public void setX(double x1) {
+//        x = x1;
+//    }
+//
+//    public void setY(double y1) {
+//        y = y1;
+//    }
+//
+//    public void setZ(double z1) {
+//        z = z1;
+//    }
 
     public double getX() {
         return x;
@@ -45,6 +45,7 @@ public class Point3d {
     //Вычисляет расстояние между точками
     public double distanceTo(Point3d point) {
         return Math.sqrt(Math.pow(point.getX() - this.getX(), 2) +
-                Math.pow(point.getY() - this.getY(), 2));
+                Math.pow(point.getY() - this.getY(), 2)+
+                Math.pow(point.getZ() - this.getZ(), 2));
     }
 }

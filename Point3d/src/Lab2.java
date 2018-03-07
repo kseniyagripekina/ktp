@@ -19,7 +19,6 @@ public class Lab2 {
         System.out.println(Double.valueOf(area));
 
     }
-
     public static double computeArea(Point3d p1, Point3d p2, Point3d p3)
     {
         if (p1.equals(p2) || p2.equals(p3) || p3.equals(p1))
@@ -32,6 +31,4 @@ public class Lab2 {
         double res = Math.sqrt(p * (p-a) * (p-b) * (p-c));
         return res;
     }
-
-
 }
